@@ -8,10 +8,30 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script>$(function() { $('.banner').unslider() })</script>
 </head>
 <body>
-
+<div class="menu">
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  <div class="name white">
+    Andreas Ahrens
+  </div>
+</div>
 <%= yield %>
-
+<div class="footer">
+  <div class="social white">
+  	<div><a href="https://github.com/DevvAndreas" target="_blank"><img title="Github" src="http://i.imgur.com/7084Xud.png"> Github </a></div>
+    <div><a href="https://www.facebook.com/ahrens.andreas" target="_blank"><img title="Github" src="http://i.imgur.com/eJzPRBw.png"> Facebook </a></div>
+    <div><a href="https://twitter.com/eiolos" target="_blank"><img title="Github" src="http://i.imgur.com/BcubqYh.png"> Twitter </a></div>
+  </div>
+  <p>Copyright 2015 Andreas Ahrens</p>
+</div>
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="/vendor/assets/javascripts/unslider.js"></script>
 </body>
 </html>
