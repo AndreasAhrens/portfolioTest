@@ -1,0 +1,56 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.menu ul {
+		list-style-type: none;
+}
+.menu li {
+    float: left;
+}
+.white {
+		color: white;
+}
+.menu a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+.name {
+		float: right;
+}
+.main {
+		clear: both;
+}
+body {
+    background-image: url("https://scontent-arn2-1.xx.fbcdn.net/hphotos-xfp1/t31.0-8/964794_10201372310328855_2097507574_o.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.presentation {
+	float: left;
+	align: center;
+	width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.presentation h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.presentation p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.footer {
+	clear: both;
+  background: white;
+}
+.footer p {
+	text-align: center;
+}
+.social div {
+		width: 33%;
+    float: left;
+}
+
