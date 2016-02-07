@@ -3,6 +3,6 @@ class PagesController < ApplicationController
     
   end
   def portfolio
-    
+    @front_images = FrontImage.all
   end
 end

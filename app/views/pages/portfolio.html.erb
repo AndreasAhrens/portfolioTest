@@ -2,9 +2,16 @@
   <div class="white">
     <h1>Portfolio</h1>
      <div class="banner">
-      <ul>
-        <li>This is my slider.</li>
-        <li>Pretty cool, huh?</li>
+   			<ul class="rig columns-3">
+          <% @front_images.each do |image|  %>
+          <li>
+            <%= link_to image.image do %>
+            <%= image.title %> <%= image_tag(image.image) %>
+<% end %>
+            <h3><%= image.title %></h3>
+            <p><%= image.title %></p>
+          </li>
+         <% end  %>
        </ul>
     </div>
   </div>
